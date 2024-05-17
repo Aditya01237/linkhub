@@ -5,11 +5,10 @@ import {Event} from "@/models/Event";
 import {Page} from "@/models/Page";
 import {faLink} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {differenceInDays, formatISO9075, isToday} from "date-fns";
+import {isToday} from "date-fns";
 import mongoose from "mongoose";
 import {getServerSession} from "next-auth";
 import {redirect} from "next/navigation";
-import {CartesianGrid, Legend, Line, LineChart, Tooltip, XAxis, YAxis} from "recharts";
 
 
 export default async function AnalyticsPage() {
